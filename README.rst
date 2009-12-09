@@ -14,7 +14,7 @@ Use it in your forms::
     from math_captcha import MathCaptchaModelForm
     from myapp.models import Blog
 
-    class MyExistingForm(MathCaptchaModelForm):
+    class MyExistingForm(MathCaptchaModelForm): # instead of forms.ModelForm
         #... extra fields here
         
         class Meta:
