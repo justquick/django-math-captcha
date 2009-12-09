@@ -6,7 +6,7 @@ Simple Math Captcha
 :Version: 0.1
 
 Django Math Captcha is an easy way to add mathematical captcha verification to your already existing forms.
-It asks you a simple math question (eg ``1 + 2 =``) and validates the form if your response is correct.
+It asks you a simple math question (eg ``'1 + 2 ='``) and validates the form if your response is correct.
 All you have to do is subclass either ``MathCaptchaForm`` or ``MathCaptchaModelForm`` in your own forms.
 
 Use it in your forms::
@@ -42,4 +42,4 @@ Available operators are: add (``+``), subtract (``-``), multiply (``*``), divide
 
 ``MATH_CAPTCHA_QUESTION``
 
-Question that appears on forms as a label for math questions. By default it is ``Are you human?``
+Question that appears on forms as a label for math questions. By default it is ``'Are you human?'``
