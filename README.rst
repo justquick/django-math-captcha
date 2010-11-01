@@ -28,7 +28,7 @@ Check out the example project for more practical use and tests.
 Settings
 ---------
 
-Set the behavior of the math captcha interaction in your settings.py
+Set the behavior of the math captcha interaction in your ``settings.py``
 
 ``MATH_CAPTCHA_NUMBERS``
 
