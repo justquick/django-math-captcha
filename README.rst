@@ -51,16 +51,16 @@ Settings
 
 Set the behavior of the math captcha interaction in your ``settings.py``
 
-``MATH_CAPTCHA_NUMBERS` = (1,2,3,4,5)`
+``MATH_CAPTCHA_NUMBERS = (1,2,3,4,5)``
 
 A list of numbers to randomly choose from when generating the questions.
 Defaults to 1 through 5.
 
 ``MATH_CAPTCHA_OPERATORS = '+-'``
 
-List of mathematical operators to use. Default is only add (``+``) and subtract (``-``).
+String containing mathematical operators to use. Default is only add (``+``) and subtract (``-``).
 Available operators are: add (``+``), subtract (``-``), multiply (``*``), divide (``/``), and modulo (``%``)
 
-``MATH_CAPTCHA_QUESTION = Are you human?'``
+``MATH_CAPTCHA_QUESTION = 'Are you human?'``
 
 Question that appears on forms as a label for math questions. By default it is ``'Are you human?'``
