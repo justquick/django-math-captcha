@@ -30,7 +30,6 @@ def math_clean(form):
         raise forms.ValidationError('Invalid token')
     if eval(question) != value:
         raise forms.ValidationError('Wrong answer, try again')
-        
 
 class MathCaptchaModelForm(forms.ModelForm):
     """
@@ -51,6 +50,7 @@ class MathCaptchaModelForm(forms.ModelForm):
     def clean(self):
         super(MathCaptchaModelForm, self).clean()
         math_clean(self)
+        return self.cleaned_data
         
 class MathCaptchaForm(forms.Form):
     """
@@ -67,4 +67,5 @@ class MathCaptchaForm(forms.Form):
 
     def clean(self):
         super(MathCaptchaForm, self).clean()
-        math_clean(self)    
+        math_clean(self)
+        return self.cleaned_data
