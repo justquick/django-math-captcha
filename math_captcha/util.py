@@ -2,6 +2,7 @@ from django.utils.hashcompat import sha_constructor
 from django.conf import settings as djsettings
 from random import choice
 from binascii import hexlify, unhexlify
+
 import settings
 
 
