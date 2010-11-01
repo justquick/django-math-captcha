@@ -2,7 +2,7 @@ from distutils.core import setup
 
 
 setup(name='django-math-captcha',
-      version=0.1,
+      version='0.1',
       description='Simple, secure math captcha for django forms',
       long_description=open('README.rst').read(),
       author='Justin Quick',
