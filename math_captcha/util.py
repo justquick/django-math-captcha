@@ -1,4 +1,4 @@
-from django.utils.hashcompat import sha_constructor
+from hashlib import sha1
 from django.conf import settings as djsettings
 from random import choice
 from binascii import hexlify, unhexlify
@@ -22,7 +22,7 @@ def encode(question):
     To the end user it looks like an extra long hex string, but it cryptographically ensures
     against any tampering. 
     """
-    return sha_constructor(djsettings.SECRET_KEY + question).hexdigest() + hexlify(question)
+    return sha1(djsettings.SECRET_KEY + question).hexdigest() + hexlify(question)
     
 def decode(answer):
     """
